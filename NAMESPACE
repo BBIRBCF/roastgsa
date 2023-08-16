@@ -1,0 +1,35 @@
+export(plotGSEA)
+export(plotStats)
+export(varrotrand)
+export(ploteffsignaturesize)
+export(heatmaprgsa_hm)
+export(roastgsa)
+export(htmlrgsa)
+export(ssGSA)
+
+S3method(print, roastgsa)
+S3method(plot, ssGSA)
+S3method(plot, roastgsa)
+
+
+import(Biobase)
+import(ggplot2)
+import(limma)
+
+importFrom("parallel", "mclapply")
+importFrom("grDevices", "devAskNewPage", "densCols", "gray.colors",
+    "grey.colors","rgb", "png","dev.off", "colorRampPalette")
+importFrom("graphics", "curve", "abline", "lines", "par", "plot", "points",
+    "layout", "legend", "boxplot", "text", "axis", "mtext", "box",
+    "arrows", "axTicks", "polygon")
+importFrom("utils", "setTxtProgressBar", "txtProgressBar", "tail","data")
+importFrom("stats", "as.dist", "cor", "cov", "cov2cor", "dbinom",
+    "dnorm", "lm", "median", "pgamma", "pnorm", "punif", "prcomp",
+    "qgamma", "qnorm", "quantile", "rbeta", "rbinom", "rgamma",
+    "pchisq", "mad", "rmultinom", "rnorm", "runif", "sd", "var",
+    "formula", "model.matrix", "density", "rweibull", "coef",
+    "as.formula","pt","p.adjust", "terms")
+importFrom("methods", "is")
+importFrom("grid", "grid.draw")
+importFrom("RColorBrewer","brewer.pal")
+importFrom("gplots","bluered","heatmap.2")
